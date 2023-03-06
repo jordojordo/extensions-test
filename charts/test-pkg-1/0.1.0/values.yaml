@@ -1,0 +1,34 @@
+# Default values for sample.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+global:
+  cattle:
+    systemDefaultRegistry: ""
+  kubectl:
+    repository: rancher/kubectl
+    tag: v1.20.2
+    pullPolicy: IfNotPresent
+  imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+pluginServer:
+  image:
+    repository: rancher/test-pkg-1
+    pullPolicy: Always
+    # Overrides the image tag whose default is the chart appVersion.
+    tag: "0.1.0"
+  service:
+    type: ClusterIP
+    port: 80
+    targetPort: 8080
+  deployment:
+    replicas: 1
+  resources: {}
+  securityContext: {}
+  nodeSelector: {}
+  tolerations: []
+  affinity: {}
+plugin:
+  enabled: true
+  versionOverride: ""
+  noCache: false
