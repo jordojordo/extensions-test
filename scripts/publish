@@ -312,9 +312,18 @@ for d in pkg/*/ ; do
 
     cp ${CHART_TMP}/index.yaml ${HELM_INDEX}
 
+    # Make temp directory for workflow build artifact
+    mkdir -p tmp/{assets,charts,extensions}/$pkg
+
+    cp -r ${PKG_ASSET} tmp/assets/$pkg
+    cp -r ${CHARTS}/${pkg}/${PKG_VERSION} tmp/charts/$pkg
+    cp -r ${EXT_FOLDER} tmp/extensions/$pkg
+
     BUILT="true"
   fi
 done
+
+cp index.yaml tmp
 
 if [ "${BUILT}" == "true" ]; then
   echo -e "${CYAN}${BOLD}${CHECK} One or more packages built${RESET}"
@@ -324,15 +333,7 @@ popd > /dev/null
 
 # Clean up
 rm -rf ${CHART_TMP}
-rm -rf ${TMP}
-
-# Make temp directory for workflow build artifact
-mkdir -p tmp/{assets,charts,extensions}/$pkg
-
-cp -r ${PKG_ASSET} tmp/assets/$pkg
-cp -r ${CHARTS}/${pkg}/${PKG_VERSION} tmp/charts/$pkg
-cp -r ${EXT_FOLDER} tmp/extensions/$pkg
-cp index.yaml tmp
+# rm -rf ${TMP}
 
 # If the user asked to create a commit, commit the changes
 # if [ "${COMMIT}" == "true" ]; then
