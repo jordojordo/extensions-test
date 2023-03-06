@@ -7,7 +7,7 @@
     ".eslintcache": true,
     ".eslintignore": true,
     ".eslintrc.js": true,
-    ".gitignore": true,
+    ".gitignore": false,
     ".nuxt*": true,
     ".nyc_output": true,
     "Dockerfile": true,
