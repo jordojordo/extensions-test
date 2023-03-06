@@ -12,9 +12,9 @@ entries:
       catalog.cattle.io/ui-component: plugins
     apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-03-06T15:49:03.443644854Z"
+    created: "2023-03-06T16:09:10.184100016Z"
     description: test-pkg-1 plugin
-    digest: c005e126a62160f9c58e04c23ae4e5793a097dd100f646265a8bd7e3588e6d76
+    digest: 70babd97719f9ef8cbb4a586a9797aabc3ae955a35929a8c19a61233ca400d75
     name: test-pkg-1
     type: application
     urls:
@@ -40,4 +40,4 @@ entries:
     urls:
     - assets/test-pkg-2/test-pkg-2-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-06T15:49:09.39198969Z"
+generated: "2023-03-06T16:09:10.183484218Z"
