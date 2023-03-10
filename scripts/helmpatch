@@ -50,7 +50,7 @@ if (pkgFile.rancher && typeof pkgFile.rancher === 'object') {
   }
 }
 
-if (updated ) {
+if (updated ){
   // Write out updated file
   const str = yaml.dump(chart);
 
@@ -83,8 +83,7 @@ if (updated ) {
 
 const values = yaml.load(fs.readFileSync(valuesFile, 'utf8'));
 
-values.pluginServer.image.repository = `${ image }`;
+values.pluginServer.image.repository = `${image}`;
 
-const valuesYaml = yaml.dump(values, { quotingType: '"' });
-
+const valuesYaml = yaml.dump(values, {quotingType: '"' });
 fs.writeFileSync(valuesFile, valuesYaml, 'utf8');
