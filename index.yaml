@@ -11,15 +11,15 @@ entries:
       catalog.cattle.io/scope: management
       catalog.cattle.io/ui-component: plugins
     apiVersion: v2
-    appVersion: 0.1.2
-    created: "2023-03-13T18:53:26.794207897Z"
+    appVersion: 0.1.3
+    created: "2023-03-13T19:31:03.411876446Z"
     description: test-pkg-1 plugin
-    digest: 9d7f95aff25f0f31d5b2ca71a29a15648c0daf6e2768d15df67178eee961f26d
+    digest: 8684d1af95124218be7018ad180d8da441fbbda0006d9df94aaa08bebff3435a
     name: test-pkg-1
     type: application
     urls:
-    - assets/test-pkg-1/test-pkg-1-0.1.2.tgz
-    version: 0.1.2
+    - assets/test-pkg-1/test-pkg-1-0.1.3.tgz
+    version: 0.1.3
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/kube-version: '>= 1.16.0-0 < 1.25.0-0'
@@ -31,7 +31,7 @@ entries:
       catalog.cattle.io/ui-component: plugins
     apiVersion: v2
     appVersion: 0.1.1
-    created: "2023-03-13T18:53:26.793757891Z"
+    created: "2023-03-13T19:31:03.411379251Z"
     description: test-pkg-1 plugin
     digest: dfba8edd687894ffd71996c6d78ab6e20976712845f5fd09ef0d3bf163207c4c
     name: test-pkg-1
@@ -50,7 +50,7 @@ entries:
       catalog.cattle.io/ui-component: plugins
     apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-03-13T18:53:26.787547208Z"
+    created: "2023-03-13T19:31:03.410956355Z"
     description: test-pkg-1 plugin
     digest: e2e02244ff43d152d06d93c2a5e50cc4f8136cf0898f0e1a3e851856e1872f81
     name: test-pkg-1
@@ -69,15 +69,15 @@ entries:
       catalog.cattle.io/scope: management
       catalog.cattle.io/ui-component: plugins
     apiVersion: v2
-    appVersion: 0.1.2
-    created: "2023-03-13T18:53:32.091377635Z"
+    appVersion: 0.1.3
+    created: "2023-03-13T19:31:08.725933318Z"
     description: test-pkg-2 plugin
-    digest: 9a93de9d965ff9167df1a277c40aebb5d9a3c3ab56f3be2bbc50744bf7ab39cd
+    digest: 697a42d0bf243404774b2529df471c4f7080f7210e3cd9ccc04472c7afb402bc
     name: test-pkg-2
     type: application
     urls:
-    - assets/test-pkg-2/test-pkg-2-0.1.2.tgz
-    version: 0.1.2
+    - assets/test-pkg-2/test-pkg-2-0.1.3.tgz
+    version: 0.1.3
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/kube-version: '>= 1.16.0-0 < 1.25.0-0'
@@ -89,7 +89,7 @@ entries:
       catalog.cattle.io/ui-component: plugins
     apiVersion: v2
     appVersion: 0.1.1
-    created: "2023-03-13T18:53:32.090779627Z"
+    created: "2023-03-13T19:31:08.725618615Z"
     description: test-pkg-2 plugin
     digest: 29719e8cceb6f5d8dc86e314a74dc7113cb5eb1858bb1cc5127ba01e241ef1ad
     name: test-pkg-2
@@ -108,7 +108,7 @@ entries:
       catalog.cattle.io/ui-component: plugins
     apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-03-13T18:53:32.09020742Z"
+    created: "2023-03-13T19:31:08.725312913Z"
     description: test-pkg-2 plugin
     digest: ae903f9ce6f4026b6cbbc3735a9c3c34ac73433b0544056cb166f852458255a5
     name: test-pkg-2
@@ -116,4 +116,4 @@ entries:
     urls:
     - assets/test-pkg-2/test-pkg-2-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-13T18:53:32.088977404Z"
+generated: "2023-03-13T19:31:08.720414068Z"
