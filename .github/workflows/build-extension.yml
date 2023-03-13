@@ -65,7 +65,7 @@ jobs:
         id: build_script
         run: |
           chmod +x ./scripts/publish
-          ./scripts/publish -s "${{ github.repository }}" -b main
+          ./scripts/publish
 
       - name: Upload charts artifact
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
@@ -85,7 +85,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          ref: main
+          ref: gh-pages
 
       - name: Configure Git
         run: |
@@ -102,6 +102,7 @@ jobs:
           git add ./{assets,charts,extensions,index.yaml}
           git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
           git push
+
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.4.1
         with:
